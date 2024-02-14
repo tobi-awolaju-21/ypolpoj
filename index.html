@@ -14,10 +14,16 @@
             color: #fff;
         }
 
-
         h2 a {
             color: #fff;
             text-decoration: none; /* Remove underline, if desired */
+            animation: blink 1s infinite; /* Blinking animation */
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: .5;
+            }
         }
 
         main {
