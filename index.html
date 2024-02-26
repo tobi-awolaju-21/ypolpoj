@@ -118,13 +118,27 @@
         <h2><a href="https://x.com/haward_not_duck" target="_blank">5✨ rating </a></h2>
     </main>
 
-    <div class="foot">
-        <h1>Haward</h1>
-        <P>
-           I'm Haward,with me, you don't need to worry about setting up your discord server or keeping the community growing,I got you covered for just $99.99 per month ....jump to my service below
-        </P>
-    </div>
+   <div class="foot">
+  <h1>Haward</h1>
+  <p id="typed-text"></p>
+</div>
 
+<script>
+const typedText = document.getElementById('typed-text');
+const text = "I'm Haward, with me, you don't need to worry about setting up your discord server or keeping the community growing, I got you covered for just $99.99 per month...jump to my service below";
+
+let i = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    typedText.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 50); // Adjust the 50 for desired speed (ms)
+  }
+}
+
+typeWriter();
+</script>
 
 
 
